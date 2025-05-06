@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import FeedbackPage from './pages/FeedbackPage';
-import AdminDashboard from './pages/AdminDashBoard';
+import AdminDashboard from './pages/AdminDashboard';
 import Layout from './components/Layout';
 function App() {
   return (

@@ -7,7 +7,13 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+    origin: 'https://feedback-portal-i6ot.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    credentials: true,
+  };
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 
